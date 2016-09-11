@@ -46,6 +46,7 @@ if (Goals.find().count() === 0) {
 }
 
 
+Categories.remove({});
 if (Categories.find().count() === 0) {
     var categoryNames = [
         'Family Dogs Being Put Down',
