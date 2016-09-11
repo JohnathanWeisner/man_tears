@@ -248,6 +248,32 @@ button {
     display: block;
     margin: 0 auto;
 }
+
+@media only screen and (max-width: 500px) {
+    #normal-btn {
+        margin-top: 00px;
+    }
+
+}
+
+@media only screen and (min-width: 501px) {
+    #normal-btn {
+        margin-top: 50px;
+    }
+}
+
+#normal-btn {
+    margin-bottom: 20px;
+    width: 130px;
+}
+
+#power-cry-btn {
+    width: 130px; 
+}
+
+#cry-level-label {
+}
+
 .white {
     color: white;
 }
@@ -290,6 +316,7 @@ button {
 #choices p {
     word-spacing: .2em;
 }
+
 .category {
     height: 30%;
     width: 100%;
