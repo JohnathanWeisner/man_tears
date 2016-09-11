@@ -326,6 +326,10 @@ button {
     margin-bottom: 1em;
     text-align: center;
 }
+.thumbnail {
+    height: 130px;
+    display: inline-block;
+}
 @-webkit-keyframes tears-accumulating {
     0%, 8% {
         height: 5%;
