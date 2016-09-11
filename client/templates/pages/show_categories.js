@@ -3,8 +3,8 @@ Template.showCategories.helpers({
         return Categories.find({});
     },
     videos: function() {
-        var a = Content.find({categoryId: this._id});
-        return a;
+        var videos = Content.find({categoryId: this._id});
+        return videos;
     },
     grabThumbnail: function() {
         var thumbnailUrl = "http://img.youtube.com/vi/" + this.videoId + "/mqdefault.jpg";
@@ -37,32 +37,35 @@ Template.showCategories.events({
         }
 
         function onPlayerReady(event) {
+            event.target.videoIsLoaded = true;
             event.target.playVideo();
         }
 
         onYouTubeIframeAPIReady();
     },
     'click .done-btn': function(e) {
-        var className = e.target.className;
-        $('.custom-overlay').css("display", "none");
-        $('.close-btn').css("display", "none");
-        $('.done-crying-btn').css("display", "none");
-        var video = document.getElementById("youtube-video");
         var player = YT.get('youtube-video');
-        if (video && video.src) {
-            var timeSpentOnVideo = player.getCurrentTime();
-            var userGoal = UserGoals.findOne({userId: Meteor.userId()});
-            var minutes = userGoal.minutesCompleted;
-            minutes += timeSpentOnVideo;
-            var minutesCompleted = {minutesCompleted: minutes};
-            Meteor.call('userGoalCreateOrUpdate', minutesCompleted, function(error, response) {
-                console.log("finished updating", response)
-                if (className.match("done-crying-btn")) {
-                    Router.go('results');
-                }
-            })
-            video.parentNode.removeChild(video);
-            $('.youtube-container').append("<div id='youtube-video'></div>");
+        if (player.videoIsLoaded) {
+            var className = e.target.className;
+            $('.custom-overlay').css("display", "none");
+            $('.close-btn').css("display", "none");
+            $('.done-crying-btn').css("display", "none");
+            var video = document.getElementById("youtube-video");
+            if (video && video.src) {
+                var timeSpentOnVideo = player.getCurrentTime();
+                var userGoal = UserGoals.findOne({userId: Meteor.userId()});
+                var minutes = userGoal.minutesCompleted;
+                minutes += timeSpentOnVideo;
+                var minutesCompleted = {minutesCompleted: minutes};
+                Meteor.call('userGoalCreateOrUpdate', minutesCompleted, function(error, response) {
+                    console.log("finished updating", response)
+                    if (className.match("done-crying-btn")) {
+                        Router.go('results');
+                    }
+                })
+                video.parentNode.removeChild(video);
+                $('.youtube-container').append("<div id='youtube-video'></div>");
+            }
         }
     }
 })
