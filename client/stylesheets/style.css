@@ -601,4 +601,27 @@ tearmax {
     display: block;
     bottom: 0;
 }
-
+.cannister-modal {
+    padding: 2em 0;
+    text-align: center;
+}
+.cannister-modal h4 {
+    padding-top: 1em;
+}
+.cannister-modal p {
+    padding: 1em 0;
+}
+.cannister-modal img {
+    display: block;
+    margin: 1em auto;
+}
+.cannister-modal button {
+    display: inline-block;
+    margin: 1em;
+    width: 200px;
+}
+.cannister-modal .white-btn {
+    background: #fff;
+    border: 1px solid #111;
+    color: #111;
+}
