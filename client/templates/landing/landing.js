@@ -4,7 +4,7 @@ Template.landing.events({
         e.stopPropagation();
 
         if (Meteor.userId()) {
-            Router.go('goalsettings');
+            Router.go('showGoals');
         } else {
             Template._loginButtons.toggleDropdown();
         }
