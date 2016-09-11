@@ -1,13 +1,16 @@
 <template name='showCategories'>
-    {{#each categories}}
-        <h3>{{name}}</h3>
-        <div class='videos'>
-            {{#each videos}}
-                <div class='video'>
-                    <img class='thumbnail' src='{{grabThumbnail videoId}}'>
-                    <div class='title' id="{{videoId}}">{{videoInfo}}</div>
-                </div>
-            {{/each}}
-        </div>
-    {{/each}}
+    <div class='overlay'>
+        <div id='youtube-video'></div>
+        {{#each categories}}
+            <h3>{{name}}</h3>
+            <div class='videos'>
+                {{#each videos}}
+                    <div class='video'>
+                        <img class='thumbnail' src='{{grabThumbnail videoId}}'>
+                        <div class='title' id="title-{{videoId}}">{{videoInfo}}</div>
+                    </div>
+                {{/each}}
+            </div>
+        {{/each}}
+    </div>
 </template>
