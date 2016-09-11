@@ -1,9 +1,12 @@
 <template name='showGoals' id="lumberjack-background">
-    <h3>Set your goal</h3>
-    <p>Choice is yours, bro.</p>
+    <h3>Let's Set a Crying Goal!</h3>
+    <p>The American Psychological Association recommends that adults get between 20 to
+120 minutes of crying each month. The guidelines suggest that you spread out this
+crying throughout the month. Aim for at least a crying session (a combination of
+moderate and vigorous crying depending on your mood) each week.</p>
     <div id='choices' class='col-md-8'>
         {{#each goals}}
-            <div class='choice' data-id="{{_id}}">
+            <div class='choice' data-id="{{_id}}" data-toggle="tooltip" title="{{rollOver}}">
                 <h4>{{text}}</h4>
                 <p>{{description}}</p>
             </div>
