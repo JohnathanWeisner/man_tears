@@ -461,7 +461,7 @@ button:focus, button:hover {
     background-color: blue;
     position: absolute;
     z-index: 15;
-    bottom: 0;
+    top: 50%;    
 }
 .done-crying-btn:hover {
     cursor: pointer;
