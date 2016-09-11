@@ -276,6 +276,7 @@ button {
     border: none;
     display: block;
     margin: 0 auto;
+    border-radius: 5px;
 }
 button:focus, button:hover {
     outline: 0;
@@ -488,7 +489,7 @@ div.tooltip-inner {
     background: #000;
     color: #fff;
 }
-#lumberjack {
+#lumberjack, #big-lumberjack {
     display: block;
     position: fixed;
     bottom: 0;
@@ -496,9 +497,26 @@ div.tooltip-inner {
     float: right;
 }
 @media only screen and (max-width: 991px) {
-    #lumberjack {
+    #lumberjack, #big-lumberjack {
         position: relative;
     }
+    #big-lumberjack {
+        margin-right: -16px;
+    }
+}
+.result-frame {
+    width: 400px;
+    display: flex;
+    text-align: center;
+    margin: 2em auto;
+    padding-bottom: 10em;
+}
+.result-frame .half {
+    width: 50%;
+    float: left;
+}
+.result-frame .half:nth-child(1) {
+    border-right: 2px solid gray;
 }
 .next-btn {
     opacity: .4;
@@ -519,9 +537,9 @@ div.tooltip-inner {
     text-align: center;
 }
 .videos {
+    padding-bottom: 4em;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
 }
 .video {
     max-width: 233px;
@@ -610,6 +628,7 @@ div.tooltip-inner {
     margin-left: -125px;
     color: #fff;
     border: 2px solid #fff;
+    border-radius: 5px;
 }
 .done-crying-btn:hover {
     cursor: pointer;
@@ -753,4 +772,8 @@ tearmax {
     background: #fff;
     border: 2px solid #111;
     color: #111;
+}
+footer {
+  padding-top: 4em;
+  padding-bottom: 1em;
 }
