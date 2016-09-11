@@ -324,7 +324,9 @@ button:focus, button:hover {
     position: fixed;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: 320px;
+    left: 50%;
+    margin-left: -160px;
 }
 
 #ad-tears-img {
