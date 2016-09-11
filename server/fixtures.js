@@ -1,16 +1,16 @@
-if (Posts.find().count() === 0) {
-    Posts.insert({
-        title : 'Introducing Telescope',
-        url : 'http://sachagreif.com/introducing-telescope/'
+if (Goals.find().count() === 0) {
+    Goals.insert({
+        text: 'Like a 16 year old girl',
+        description: '6 - 8 cry sessions a month'
     });
-  
-    Posts.insert({
-        title : 'Meteor',
-        url : 'http://meteor.com'
-    });
-  
-    Posts.insert({
-        title : 'The Meteor Book',
-        url : 'http://themeteorbook.com'
-    });
+
+    Goals.insert({
+        text: 'Above and beyond',
+        description: '4 - 6 sessions a month'
+    })
+
+    Goals.insert({
+        text: 'Feminist',
+        description: '3 cry sessions a month'
+    })
 }
