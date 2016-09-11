@@ -3,6 +3,28 @@
         margin-bottom: -50px;
     }
 }
+@-webkit-keyframes big-tear-falling {
+    to {
+        top: 1500px;
+    }
+}
+@-webkit-keyframes head-fade-1 {
+    0% {
+        opacity: 1;
+    }
+    26.67% {
+        opacity: 1;
+    }
+    33.33% {
+        opacity: 0;
+    }
+    93.33% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 .grid-block,
 .main,
 .post,
@@ -311,16 +333,67 @@ button:focus, button:hover {
     box-shadow: 1px 1px 1px 1px black;
 }
 
+.heads {
+    width: 90px;
+    height: 119px;
+    position: relative;
+    display: block;
+    margin: 2em auto;
+}
+.heads img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    -webkit-animation-name: head-fade-1;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 3s;
+}
+.heads img:nth-of-type(1) {
+    opacity: 1;
+    -webkit-animation-delay: 0s;
+}
+.heads img:nth-of-type(2) {
+    top: -4px;
+    -webkit-animation-delay: 2s;
+}
+.heads img:nth-of-type(3) {
+    top: -4px;
+    -webkit-animation-delay: 4s;
+}
+.falling-tear {
+    position: absolute;
+    top: -500px;
+    left: -100px;
+    width: 90px;
+    -webkit-animation: big-tear-falling 5s 3s infinite forwards;
+}
+.falling-tear:nth-of-type(2) {
+    left: auto;
+    right: 0px;
+    -webkit-animation-delay: 2s;
+}
+.falling-tear:nth-of-type(3) {
+    left: auto;
+    right: -60px;
+    -webkit-animation-delay: 4s;
+}
 #main-title {
-    padding: 4em 0;
+    padding: 0 0 0.5em;
     margin: 0;
     position: relative;
     letter-spacing: 0.1em;
     float: right;
-    width: 320px;
+    color: #1583F6;
+    width: 100%;
+    text-align: center;
+    font-size: 4em;
 }
 #main-title small {
-    font-size: 0.45em;
+    font-size: 0.35em;
+    display: block;
+    margin-top: 0.5em;
     letter-spacing: 0.05em;
 }
 
@@ -365,7 +438,7 @@ div.tooltip-inner {
 
 #main-title:after {
     content: "";
-    display: block;
+    display: none;
     position: absolute;
     z-index: -1;
     width: 300px;
@@ -379,9 +452,20 @@ div.tooltip-inner {
 .story {
     display: block;
     clear: both;
+    max-width: 500px;
+    border-top: 1px solid gray;
+    margin: 2em auto;
+    padding: 2em 0;
+    text-align: center;
+}
+.story h4 {
+    color: gray;
 }
 .story p {
-    padding-bottom: 0.5em;
+    padding-top: 1em;
+}
+.story button {
+    margin-top: 2em;
 }
 #choices {
     margin-top: 2em;
@@ -660,6 +744,6 @@ tearmax {
 }
 .cannister-modal .white-btn {
     background: #fff;
-    border: 1px solid #111;
+    border: 2px solid #111;
     color: #111;
 }
