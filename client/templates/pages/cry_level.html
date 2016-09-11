@@ -1,9 +1,16 @@
 <template name='cryLevel'>
-    <div class="row">
-        <h3 class='col-md-offset-1 col-md-6 col-xs-12'>Select your cry level</h3>
-        <p id='cry-level-label' class='col-md-offset-1 col-md-6 col-xs-12'>Little time? Try a power cry.</p>
+    <div class="row col-md-12 col-xs-12">
+        <h3 id='cry-level-label'>How much do you want to cry today?</h3>
     </div>
-    <button id='normal-btn'>Normal</button>
-    <button id='power-cry-btn'>Power Cry</button>
+    <div class="cry-level-button col-md-6 col-xs-12">
+        <img src="images/normal_cry.png">
+        <button id='normal-btn'>Normal</button>
+        <small>When you're looking for a good cry sesh</small>
+    </div>
+    <div class="cry-level-button col-md-6 col-xs-12">
+        <img src="images/power_cry.png">
+        <button id='power-cry-btn'>Power Cry</button>
+        <small>When you just don't have the time</small>
+    </div>
     {{> notifyReady}}
 </template>
