@@ -22,6 +22,7 @@ Template.showCategories.events({
     'click .thumbnail': function(a, b, c) {
         $('.custom-overlay').css("display", "block");
         $('.close-btn').css("display", "block");
+        $('.done-crying-btn').css("display", "block");
         var videoId = this.videoId;
         var player;
         function onYouTubeIframeAPIReady() {
@@ -41,11 +42,21 @@ Template.showCategories.events({
 
         onYouTubeIframeAPIReady();
     },
-    'click .close-btn': function() {
+    'click .done-btn': function() {
         $('.custom-overlay').css("display", "none");
         $('.close-btn').css("display", "none");
+        $('.done-crying-btn').css("display", "none");
         var video = document.getElementById("youtube-video");
+        var player = YT.get('youtube-video');
         if (video && video.src) {
+            var timeSpentOnVideo = player.getCurrentTime();
+            var userGoal = UserGoals.findOne({userId: Meteor.userId()});
+            var minutes = userGoal.minutesCompleted;
+            minutes += timeSpentOnVideo;
+            var minutesCompleted = {minutesCompleted: minutes};
+            Meteor.call('userGoalCreateOrUpdate', minutesCompleted, function(error, response) {
+                console.log("response", response)
+            })
             video.parentNode.removeChild(video);
             $('.youtube-container').append("<div id='youtube-video'></div>");
         }
