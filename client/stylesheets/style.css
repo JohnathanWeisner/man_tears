@@ -529,6 +529,10 @@ div.tooltip-inner {
     height: 130px;
     display: inline-block;
 }
+.center-this {
+    width: 100%;
+    text-align: center;
+}
 .title {
     width: 100%;
     font-size: .8em;

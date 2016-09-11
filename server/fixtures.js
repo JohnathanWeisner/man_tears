@@ -71,15 +71,13 @@ if (Content.find().count() === 0) {
         categoryId: categoryId,
         level: 'normal',
         type: 'video',
-        videoId: '2IPJEnOT9AQ',
-        length: '2m45s'
+        videoId: '2IPJEnOT9AQ'
     })
     Content.insert({
         categoryId: categoryId,
         level: 'normal',
         type: 'video',
-        videoId: '-qSNMfm1rlg',
-        length: '2m45s'
+        videoId: '-qSNMfm1rlg'
     })
     Content.insert({
         categoryId: categoryId,
