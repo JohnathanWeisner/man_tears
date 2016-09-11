@@ -300,6 +300,7 @@ button:focus, button:hover {
 #ad-tears {
     position: fixed;
     bottom: 0;
+    left: 0;
     width: 100%;
 }
 
@@ -307,7 +308,7 @@ button:focus, button:hover {
     width: 320px;
     margin: 0 auto;
     display: block;
-    box-shadow: 2px 2px black;
+    box-shadow: 1px 1px 1px 1px black;
 }
 
 #main-title {
