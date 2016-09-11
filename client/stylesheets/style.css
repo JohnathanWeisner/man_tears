@@ -330,9 +330,15 @@ div.tooltip-inner {
     -moz-border-radius: 0px;
     border-radius: 0px;
     margin-bottom: 6px;
+    padding: 4px 4px;
     min-width: 400px;
+    font-family: 'Montserrat', san-serif;
     background-color: #505050;
-    font-size: 25px;
+    font-size: 16px;
+}
+
+#power-cry-btn .tooltip-inner {
+    font-size: 12px !important;
 }
 
 #rate-cry-msg {
