@@ -361,8 +361,15 @@ button {
     margin-bottom: 1em;
     text-align: center;
 }
-
+.videos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .video {
+    max-width: 233px;
+    flex-grow: 1;
+    text-align: center;
 }
 .thumbnail {
     height: 130px;
