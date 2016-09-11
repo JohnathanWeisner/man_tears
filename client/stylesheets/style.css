@@ -324,6 +324,17 @@ button:focus, button:hover {
     letter-spacing: 0.05em;
 }
 
+div.tooltip-inner {
+    text-align: center;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    margin-bottom: 6px;
+    min-width: 400px;
+    background-color: #505050;
+    font-size: 25px;
+}
+
 #rate-cry-msg {
     width: 215px;
     margin-top: 50px;
