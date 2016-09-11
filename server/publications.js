@@ -1,3 +1,7 @@
-Meteor.publish('posts', function () {
-    return Posts.find();
-});
+Meteor.publish('categories', function() {
+    return Categories.find({});
+})
+
+Meteor.publish('goals', function() {
+    return Goals.find({});
+})
