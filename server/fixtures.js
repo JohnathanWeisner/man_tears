@@ -86,7 +86,7 @@ if (Content.find().count() === 0) {
         categoryId: categoryMilitary,
         level: 'power',
         type: 'video',
-        videoId: 'r2OekoR5SHc',
+        videoId: 'MsEZBSTc3a0',
         length: '2m45s'
     })
     Content.insert({
