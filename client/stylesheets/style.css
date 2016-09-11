@@ -361,10 +361,22 @@ button {
     margin-bottom: 1em;
     text-align: center;
 }
+
+.video {
+}
 .thumbnail {
     height: 130px;
     display: inline-block;
 }
+.title {
+    width: 100%;
+    font-size: .8em;
+    text-align: center;
+}
+.thumbnail:hover {
+    cursor: pointer;
+}
+
 @-webkit-keyframes tears-accumulating {
     0%, 8% {
         height: 5%;

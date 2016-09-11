@@ -62,7 +62,6 @@ if (Categories.find().count() === 0) {
 
 if (Content.find().count() === 0) {
     var categoryId = Categories.findOne({name: 'Family Dogs Being Put Down'})._id;
-    console.log(categoryId)
     Content.insert({
         categoryId: categoryId,
         level: 'normal',
