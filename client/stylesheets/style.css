@@ -512,6 +512,7 @@ div.tooltip-inner {
     text-align: center;
     margin: 2em auto;
     padding-bottom: 10em;
+    margin-top: -50px;
 }
 .result-frame .half {
     width: 50%;
@@ -776,6 +777,9 @@ tearmax {
     color: #111;
 }
 footer {
-  padding-top: 4em;
-  padding-bottom: 1em;
+    padding-top: 4em;
+    padding-bottom: 1em;
+}
+.push-up {
+    margin-bottom: -100px;
 }
