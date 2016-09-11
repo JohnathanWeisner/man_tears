@@ -11,5 +11,3 @@ Accounts.onLogin(function () {
         }
     }); 
 });
-
-Accounts.removeDefaultRateLimit()

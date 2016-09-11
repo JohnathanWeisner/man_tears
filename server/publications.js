@@ -5,3 +5,7 @@ Meteor.publish('categories', function() {
 Meteor.publish('goals', function() {
     return Goals.find({});
 })
+
+Meteor.publish('content', function() {
+    return Content.find({});
+})

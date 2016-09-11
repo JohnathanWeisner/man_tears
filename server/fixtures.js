@@ -58,4 +58,30 @@ if (Categories.find().count() === 0) {
             name: categoryNames[i]
         })
     }
+};
+
+if (Content.find().count() === 0) {
+    var categoryId = Categories.findOne({name: 'Family Dogs Being Put Down'})._id;
+    console.log(categoryId)
+    Content.insert({
+        categoryId: categoryId,
+        level: 'normal',
+        type: 'video',
+        videoId: '2IPJEnOT9AQ',
+        length: '2m45s'
+    })
+    Content.insert({
+        categoryId: categoryId,
+        level: 'normal',
+        type: 'video',
+        videoId: '-qSNMfm1rlg',
+        length: '2m45s'
+    })
+    Content.insert({
+        categoryId: categoryId,
+        level: 'normal',
+        type: 'video',
+        videoId: 'sjJUyhVa_9Q',
+        length: '2m45s'
+    })
 }

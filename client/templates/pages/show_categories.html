@@ -1,9 +1,10 @@
 <template name='showCategories'>
     {{#each categories}}
-        <div class='overlay'>
-            <div class='category'>
-                <h2>{{name}}</h2>
-            </div>
+        <h3>{{name}}</h3>
+        <div class='videos'>
+            {{#each videos}}
+                <img class='thumbnail' src='{{grabThumbnail videoId}}'>
+            {{/each}}
         </div>
     {{/each}}
 </template>
