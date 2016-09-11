@@ -1,7 +1,8 @@
 if (Goals.find().count() === 0) {
     Goals.insert({
-        text: 'Like a 16 year old girl',
-        description: '6 - 8 cry sessions a month',
+        text: '120 minutes',
+        description: '8 - 12 cry sessions a month',
+        rollOver: 'This is how much a 16 year old girl cries. You may choose to cry this much if certain life events like the death of a pet or when you have overcomes you.',
         minutes: 120,
         messages: [
             {percent: 0, text: 'Do I have to beat the tears out of you?'},
@@ -14,8 +15,9 @@ if (Goals.find().count() === 0) {
     });
 
     Goals.insert({
-        text: 'Above and beyond',
-        description: '4 - 6 sessions a month',
+        text: '60 minutes',
+        description: '4 - 8 sessions a month',
+        rollOver: 'Data shows that this is how much boys cry when before the age of 12 when before society signals them that they need to be strong.',
         minutes: 60,
         messages: [
             {percent: 0, text: 'You aint dun shit.'},
@@ -28,8 +30,9 @@ if (Goals.find().count() === 0) {
     })
 
     Goals.insert({
-        text: 'Feminist',
-        description: '3 cry sessions a month',
+        text: '20 minutes',
+        description: '1 - 4 cry sessions a month',
+        rollOver: 'This is actually how much some adult men cry on their worst month.',
         minutes: 20,
         messages: [
             {percent: 0, text: 'Bitch please.'},
