@@ -297,6 +297,29 @@ button {
     font-size: 0.45em;
     letter-spacing: 0.05em;
 }
+
+#rate-cry-msg {
+    width: 215px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+#rate-imgs-container {
+    margin-bottom: 60px;
+    width: 370px;
+}
+
+.rate-img {
+    width: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+
 #main-title:after {
     content: "";
     display: block;
