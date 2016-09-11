@@ -11,7 +11,7 @@ Accounts.onLogin(function () {
                 currentPath === '/goal-settings' ||
                 currentPath === '/')) {
             
-            Router.go('cryLevel');
+            Router.go('showGoals');
         } else if (!userHasGoal) {
             Router.go('showGoals');
         }
