@@ -1,16 +1,23 @@
 <template name='cryLevel'>
-    <div class="row col-md-12 col-xs-12">
-        <h3 id='cry-level-label'>How much do you want to cry today?</h3>
+    <div class='youtube-container'>
+        <div class='close-btn done-btn'><span>x</span></div>
+        <div id='youtube-video'></div>
+        <div class='done-crying-btn done-btn'>I'm Done Crying</div>
+        <div class="row col-md-12 col-xs-12">
+            <h3 id='cry-level-label'>How much do you want to cry today?</h3>
+        </div>
+        <div class="cry-level-button col-md-6 col-xs-12">
+            <img src="images/normal_cry.png">
+            <button id='normal-btn'>Normal</button>
+            <small>When you're looking for a good cry sesh</small>
+        </div>
+        <div class="cry-level-button col-md-6 col-xs-12">
+            <img src="images/power_cry.png">
+            <button id='power-cry-btn'>Power Cry</button>
+            <small>When you just don't have the time</small>
+        </div>
+        {{> notifyReady}}
     </div>
-    <div class="cry-level-button col-md-6 col-xs-12">
-        <img src="images/normal_cry.png">
-        <button id='normal-btn'>Normal</button>
-        <small>When you're looking for a good cry sesh</small>
-    </div>
-    <div class="cry-level-button col-md-6 col-xs-12">
-        <img src="images/power_cry.png">
-        <button id='power-cry-btn'>Power Cry</button>
-        <small>When you just don't have the time</small>
-    </div>
-    {{> notifyReady}}
 </template>
+
+
