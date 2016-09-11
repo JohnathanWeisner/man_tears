@@ -254,6 +254,7 @@ button {
     margin: 0 auto;
 }
 
+
 @media only screen and (max-width: 500px) {
     #normal-btn {
         margin-top: 00px;
@@ -321,13 +322,26 @@ button {
     margin-top: 2em;
 }
 .choice {
-    width: 80%;
     border: 1px solid #1583F6;
     padding: 1em 1em 1em 1em;
     margin-bottom: 2em;
 }
 .choice:hover, .category:hover {
     cursor: pointer;
+    background: #1583F6;
+    color: #fff;
+}
+#lumberjack {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    float: right;
+}
+@media only screen and (max-width: 991px) {
+    #lumberjack {
+        position: relative;
+    }
 }
 .next-btn {
     opacity: .4;

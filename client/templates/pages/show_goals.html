@@ -1,7 +1,7 @@
-<template name='showGoals'>
+<template name='showGoals' id="lumberjack-background">
     <h3>Set your goal</h3>
     <p>Choice is yours, bro.</p>
-    <div id='choices'>
+    <div id='choices' class='col-md-8'>
         {{#each goals}}
             <div class='choice' data-id="{{_id}}">
                 <h4>{{text}}</h4>
@@ -9,4 +9,5 @@
             </div>
         {{/each}}
     </div>
+    <img id="lumberjack" src="images/lumberjack.png">
 </template>
