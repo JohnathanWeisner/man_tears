@@ -53,10 +53,10 @@ if (Categories.find().count() === 0) {
         'Voicemails From Your Ex'
     ]
 
-    for (var i=0; i<categoryNames.length; i++) {
+    for (var i = 0; i < categoryNames.length; i++) {
         Categories.insert({
             name: categoryNames[i]
-        })
+        });
     }
 };
 
