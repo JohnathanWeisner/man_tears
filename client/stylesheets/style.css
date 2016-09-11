@@ -390,6 +390,11 @@ div.tooltip-inner {
     background: #1583F6;
     color: #fff;
 }
+#normal-btn:hover, #power-cry-btn:hover {
+    cursor: pointer;
+    background: #000;
+    color: #fff;
+}
 #lumberjack {
     display: block;
     position: fixed;
