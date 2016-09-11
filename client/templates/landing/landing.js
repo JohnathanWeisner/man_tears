@@ -4,7 +4,13 @@ Template.landing.events({
         e.stopPropagation();
 
         if (Meteor.userId()) {
-            Router.go('showGoals');
+            Meteor.call('userHasGoal', function (err, userHasGoal) {
+                if (userHasGoal) {
+                    Router.go('showGoals');
+                } else {
+                    Router.go('cryLevel');
+                }
+            }); 
         } else {
             Template._loginButtons.toggleDropdown();
         }

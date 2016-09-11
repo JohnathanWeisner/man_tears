@@ -3,5 +3,13 @@ Accounts.ui.config({
 });
 
 Accounts.onLogin(function () {
-    Router.go('showGoals');
+    Meteor.call('userHasGoal', function (err, userHasGoal) {
+        if (userHasGoal) {
+            Router.go('cryLevel');
+        } else {
+            Router.go('showGoals');
+        }
+    }); 
 });
+
+Accounts.removeDefaultRateLimit()
