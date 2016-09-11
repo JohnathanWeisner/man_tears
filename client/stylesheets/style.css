@@ -447,7 +447,7 @@ tears {
     z-index: 1;
 }
 canoftears.animated tears {
-    -webkit-animation: tears-accumulating 6s infinite;
+    -webkit-animation: tears-accumulating 6s 1 forwards;
 }
 tears:before {
     display: block;
@@ -471,7 +471,7 @@ teardrop {
     z-index: 1;
 }
 canoftears.animated teardrop {
-    -webkit-animation: tear-falling 1.5s infinite;
+    -webkit-animation: tear-falling 1.5s linear 4;
 }
 teardrop:before {
     content: "";
