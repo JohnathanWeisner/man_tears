@@ -1,3 +1,8 @@
+@-webkit-keyframes droplet-hover {
+    100% {
+        margin-bottom: -50px;
+    }
+}
 .grid-block,
 .main,
 .post,
@@ -278,12 +283,16 @@ button {
     color: white;
 }
 #main-title {
-    padding: 3em 0;
+    padding: 4em 0;
     margin: 0;
     position: relative;
+    letter-spacing: 0.1em;
+    float: right;
+    width: 320px;
 }
 #main-title small {
     font-size: 0.45em;
+    letter-spacing: 0em;
 }
 #main-title:after {
     content: "";
@@ -291,10 +300,19 @@ button {
     position: absolute;
     z-index: -1;
     width: 300px;
-    height: 300px;
+    height: 415px;
     background: url(images/big_tear.png) no-repeat center bottom;
+    background-size: 276px auto;
     bottom: 0px;
-    left: 83px;
+    left: 72px;
+    -webkit-animation: droplet-hover 2s 6s 1 forwards;
+}
+.story {
+    display: block;
+    clear: both;
+}
+.story p {
+    padding-bottom: 0.5em;
 }
 #choices {
     margin-top: 2em;
