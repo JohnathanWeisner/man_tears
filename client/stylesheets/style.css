@@ -411,6 +411,18 @@ button {
     top: 0;
     z-index: 10;
 }
+.done-crying-btn {
+    display: none;
+    width: 200px;
+    height: 30px;
+    background-color: blue;
+    position: absolute;
+    z-index: 15;
+    bottom: 0;
+}
+.done-crying-btn:hover {
+    cursor: pointer;
+}
 
 @-webkit-keyframes tears-accumulating {
     0%, 8% {
