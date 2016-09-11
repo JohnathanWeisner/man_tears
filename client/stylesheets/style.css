@@ -41,6 +41,8 @@ body {
 
 .navbar {
     margin: 0;
+    background: #fff;
+    border-color: #fff;
 }
 /* line 32, ../sass/style.scss */
 
@@ -427,19 +429,31 @@ button:focus, button:hover {
     width: 90px;
 }
 #youtube-video {
-    position: absolute;
-    top: 0;
     z-index: 12;
+    display: block;
+    position: fixed;
+    left: 50%;
+    margin-left: -320px;
+    top: 10%;
 }
 .close-btn {
-    width: 10px;
-    height: 10px;
-    background: red;
-    position: absolute;
-    top: 0;
-    right: 0;
+    width: 20px;
+    height: 20px;
+    color: #fff;
+    border: 2px solid #fff;
+    position: fixed;
+    top: 40px;
+    left: 50%;
+    margin-left: 320px;
+    border-radius: 100px;
+    padding: 1em;
     z-index: 15;
     display: none;
+}
+.close-btn span {
+  top: 3px;
+  left: 11px;
+  position: absolute;
 }
 .close-btn:hover {
     cursor: pointer;
@@ -450,18 +464,24 @@ button:focus, button:hover {
     height: 100%;
     background: black;
     opacity: .7;
-    position: absolute;
+    position: fixed;
     top: 0;
     z-index: 10;
 }
+.youtube-container {
+}
 .done-crying-btn {
     display: none;
-    width: 200px;
-    height: 30px;
-    background-color: blue;
-    position: absolute;
+    padding: 1em 0;
+    text-align: center;
+    position: fixed;
     z-index: 15;
-    top: 50%;    
+    top: 75%;    
+    width: 250px;
+    left: 50%;
+    margin-left: -125px;
+    color: #fff;
+    border: 2px solid #fff;
 }
 .done-crying-btn:hover {
     cursor: pointer;

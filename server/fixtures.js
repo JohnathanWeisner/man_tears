@@ -63,8 +63,10 @@ if (Categories.find().count() === 0) {
     }
 };
 
+Content.remove({});
 if (Content.find().count() === 0) {
     var categoryId = Categories.findOne({name: 'Family Dogs Being Put Down'})._id;
+    var categoryIdTwo = Categories.findOne({name: 'Father Son Moments'})._id;
     Content.insert({
         categoryId: categoryId,
         level: 'normal',
@@ -84,6 +86,20 @@ if (Content.find().count() === 0) {
         level: 'normal',
         type: 'video',
         videoId: 'sjJUyhVa_9Q',
+        length: '2m45s'
+    })
+    Content.insert({
+        categoryId: categoryIdTwo,
+        level: 'power',
+        type: 'video',
+        videoId: 'AAbokV76tkU',
+        length: '2m45s'
+    })
+    Content.insert({
+        categoryId: categoryIdTwo,
+        level: 'power',
+        type: 'video',
+        videoId: 'PYGODWJgR-c',
         length: '2m45s'
     })
 }
