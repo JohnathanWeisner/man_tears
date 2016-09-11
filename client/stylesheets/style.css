@@ -361,7 +361,6 @@ button {
     margin-bottom: 1em;
     text-align: center;
 }
-
 .video {
 }
 .thumbnail {
@@ -375,6 +374,10 @@ button {
 }
 .thumbnail:hover {
     cursor: pointer;
+}
+#youtube-video {
+    position: absolute;
+    top: 0;
 }
 
 @-webkit-keyframes tears-accumulating {
