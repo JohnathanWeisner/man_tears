@@ -6,9 +6,9 @@ Template.landing.events({
         if (Meteor.userId()) {
             Meteor.call('userHasGoal', function (err, userHasGoal) {
                 if (userHasGoal) {
-                    Router.go('showGoals');
-                } else {
                     Router.go('cryLevel');
+                } else {
+                    Router.go('showGoals');
                 }
             }); 
         } else {
