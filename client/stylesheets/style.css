@@ -536,9 +536,9 @@ div.tooltip-inner {
     text-align: center;
 }
 .videos {
+    padding-bottom: 4em;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
 }
 .video {
     max-width: 233px;
