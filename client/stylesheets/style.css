@@ -263,3 +263,23 @@ button {
     bottom: 0px;
     left: 98px;
 }
+#choices {
+    margin-top: 2em;
+}
+.choice {
+    width: 80%;
+    border: 1px solid #1583F6;
+    padding: 1em 1em 1em 1em;
+    margin-bottom: 2em;
+}
+.choice:hover {
+    cursor: pointer;
+}
+.next-btn {
+    opacity: .4;
+    padding: 1em 7em;
+    border-radius: 3px;
+}
+#choices p {
+    word-spacing: .2em;
+}
