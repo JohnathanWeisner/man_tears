@@ -383,6 +383,10 @@ button {
 .thumbnail:hover {
     cursor: pointer;
 }
+#youtube-video {
+    position: absolute;
+    top: 0;
+}
 
 @-webkit-keyframes tears-accumulating {
     0%, 8% {
