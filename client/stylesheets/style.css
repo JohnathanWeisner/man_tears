@@ -295,7 +295,7 @@ button {
 }
 #main-title small {
     font-size: 0.45em;
-    letter-spacing: 0em;
+    letter-spacing: 0.05em;
 }
 #main-title:after {
     content: "";
