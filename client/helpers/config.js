@@ -3,5 +3,5 @@ Accounts.ui.config({
 });
 
 Accounts.onLogin(function () {
-    Router.go('goalsettings');
+    Router.go('showGoals');
 });
