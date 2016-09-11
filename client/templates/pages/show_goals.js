@@ -2,7 +2,11 @@ Template.showGoals.helpers({
     goals: function() {
         return Goals.find({});
     }
-})
+});
+
+Template.showGoals.rendered = function () {
+    $('[data-toggle="tooltip"]').tooltip();
+};
 
 Template.showGoals.events({
     'click div.choice': function (e) {
@@ -15,4 +19,4 @@ Template.showGoals.events({
 
         Router.go('cryLevel');
     }
-})
+});
