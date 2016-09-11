@@ -431,6 +431,9 @@ div.tooltip-inner {
     margin-right: 10px;
 }
 
+.rate-img:hover {
+    cursor: pointer;
+}
 .col-centered {
     float: none;
     margin: 0 auto;
