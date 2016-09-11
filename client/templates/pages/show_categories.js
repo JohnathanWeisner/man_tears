@@ -56,13 +56,13 @@ Template.showCategories.events({
             minutes += timeSpentOnVideo;
             var minutesCompleted = {minutesCompleted: minutes};
             Meteor.call('userGoalCreateOrUpdate', minutesCompleted, function(error, response) {
-                console.log("response", response)
+                console.log("finished updating", response)
+                if (className.match("done-crying-btn")) {
+                    Router.go('results');
+                }
             })
             video.parentNode.removeChild(video);
             $('.youtube-container').append("<div id='youtube-video'></div>");
-        }
-        if (className.match("done-crying-btn")) {
-            Router.go('results');
         }
     }
 })
