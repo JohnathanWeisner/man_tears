@@ -1,6 +1,30 @@
 <template name="notFound">
+  <div id="tear-can">
+    <canoftears>
+      <teardrop></teardrop>
+        <can>
+          <top></top>
+          <tearmax>
+            <tears></tears>
+          </tearmax>
+          <bottom></bottom>
+        </can>
+    </canoftears>
+  </div>
+</template>
+<!--script>
+  //TODO: put this somewhere
+  //didn't know where to put this script so put it here for now!
+  function fill_can(minutes_cried, total_minute_goal) {
+    var percentage = minutes_cried/total_minute_goal * 100;
+    $('tearmax').css('height', percentage + '%');
+  }
+</script-->
+<!--
+<template name="notFound">
     <div class="not-found page jumbotron">
         <h2>404</h2>
         <p>Sorry, we couldn't find a page at this address.</p>
     </div>
 </template>
+-->

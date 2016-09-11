@@ -41,3 +41,21 @@ if (Goals.find().count() === 0) {
         ]
     })
 }
+
+
+if (Categories.find().count() === 0) {
+    var categoryNames = [
+        'Family Dogs Being Put Down',
+        'Perfectly Crafted Business Deals that Fell Through the Cracks at the Last Moment',
+        'Father Son Moments',
+        'Military Returning Home',
+        'Eternal Sunshine of the Spotless Mind',
+        'Voicemails From Your Ex'
+    ]
+
+    for (var i=0; i<categoryNames.length; i++) {
+        Categories.insert({
+            name: categoryNames[i]
+        })
+    }
+}
