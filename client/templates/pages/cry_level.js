@@ -1,3 +1,7 @@
+Template.cryLevel.rendered = function () {
+    $('[data-toggle="tooltip"]').tooltip();
+};
+
 Template.cryLevel.events({
     'click #normal-btn': function() {
         Router.go('showCategories');
