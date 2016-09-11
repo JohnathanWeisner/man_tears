@@ -42,7 +42,8 @@ Template.showCategories.events({
 
         onYouTubeIframeAPIReady();
     },
-    'click .done-btn': function() {
+    'click .done-btn': function(e) {
+        var className = e.target.className;
         $('.custom-overlay').css("display", "none");
         $('.close-btn').css("display", "none");
         $('.done-crying-btn').css("display", "none");
@@ -59,6 +60,9 @@ Template.showCategories.events({
             })
             video.parentNode.removeChild(video);
             $('.youtube-container').append("<div id='youtube-video'></div>");
+        }
+        if (className.match("done-crying-btn")) {
+            Router.go('results');
         }
     }
 })
