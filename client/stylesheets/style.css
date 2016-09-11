@@ -434,6 +434,7 @@ button:focus, button:hover {
     position: fixed;
     left: 50%;
     margin-left: -320px;
+    top: 10%;
 }
 .close-btn {
     width: 20px;
