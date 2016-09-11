@@ -258,6 +258,9 @@ button {
     #normal-btn {
         margin-top: 00px;
     }
+    .navbar-right img {
+        display: none;
+    }
 
 }
 
