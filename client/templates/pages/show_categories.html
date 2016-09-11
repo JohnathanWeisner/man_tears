@@ -3,7 +3,10 @@
         <h3>{{name}}</h3>
         <div class='videos'>
             {{#each videos}}
-                <img class='thumbnail' src='{{grabThumbnail videoId}}'>
+                <div class='video'>
+                    <img class='thumbnail' src='{{grabThumbnail videoId}}'>
+                    <div class='title' id="{{videoId}}">{{videoInfo}}</div>
+                </div>
             {{/each}}
         </div>
     {{/each}}
