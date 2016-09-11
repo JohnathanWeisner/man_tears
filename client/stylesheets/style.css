@@ -276,6 +276,7 @@ button {
     border: none;
     display: block;
     margin: 0 auto;
+    border-radius: 5px;
 }
 button:focus, button:hover {
     outline: 0;
@@ -323,7 +324,9 @@ button:focus, button:hover {
     position: fixed;
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: 320px;
+    left: 50%;
+    margin-left: -160px;
 }
 
 #ad-tears-img {
@@ -509,6 +512,7 @@ div.tooltip-inner {
     text-align: center;
     margin: 2em auto;
     padding-bottom: 10em;
+    margin-top: -50px;
 }
 .result-frame .half {
     width: 50%;
@@ -627,6 +631,7 @@ div.tooltip-inner {
     margin-left: -125px;
     color: #fff;
     border: 2px solid #fff;
+    border-radius: 5px;
 }
 .done-crying-btn:hover {
     cursor: pointer;
@@ -770,4 +775,11 @@ tearmax {
     background: #fff;
     border: 2px solid #111;
     color: #111;
+}
+footer {
+    padding-top: 4em;
+    padding-bottom: 1em;
+}
+.push-up {
+    margin-bottom: -100px;
 }

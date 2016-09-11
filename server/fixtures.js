@@ -5,12 +5,12 @@ if (Goals.find().count() === 0) {
         rollOver: 'This is how much a 16 year old girl cries.',
         minutes: 120,
         messages: [
-            {percent: 0, text: 'Do I have to beat the tears out of you?'},
-            {percent: 1, text: 'Like a 16 year old girl: 1 percent'},
-            {percent: 25, text: 'Like a 16 year old girl: 25 percent'},
-            {percent: 50, text: 'Like a 16 year old girl: 50 percent'},
-            {percent: 75, text: 'Like a 16 year old girl: 75 percent'},
-            {percent: 100, text: 'Like a 16 year old girl: 100 percent'}
+            {percent: 0, max: 0.99, text: 'Do I have to beat the tears out of you?'},
+            {percent: 1, max: 24, text: 'Are those crocodile tears? Your cold blooded indifference to equality is both frightening and pathetic.'},
+            {percent: 25, max: 49, text: 'You’re trying, but I wouldn’t call that crying.'},
+            {percent: 50, max: 74, text: 'If your mother only gave 50% of her effort while giving birth to you, you probably wouldn’t be here right now. This is your chance to not be a disappointment; just think of the tears she shed for you.'},
+            {percent: 75, max: 99, text: 'That’s more like it. Is that Blue by Joni Mitchell I hear? That’s the kind of commitment we need if we’re going to change the world, together.'},
+            {percent: 100, max: 10000, text: 'More and more the hardest part of crying is when I can’t stop.'}
         ]
     });
 
@@ -20,12 +20,12 @@ if (Goals.find().count() === 0) {
         rollOver: 'Data shows that this is how much boys (and girls) cry at the age of 12 before society tells them that they need to be strong.',
         minutes: 60,
         messages: [
-            {percent: 0, text: 'You aint dun shit.'},
-            {percent: 1, text: 'Above and beyond: 1 percent'},
-            {percent: 25, text: 'Above and beyond: 25 percent'},
-            {percent: 50, text: 'Above and beyond: 50 percent'},
-            {percent: 75, text: 'Above and beyond: 75 percent'},
-            {percent: 100, text: 'Above and beyond: 100 percent'}
+            {percent: 0, max: 0.99, text: 'Do I have to beat the tears out of you?'},
+            {percent: 1, max: 24, text: 'Are those crocodile tears? Your cold blooded indifference to equality is both frightening and pathetic.'},
+            {percent: 25, max: 49, text: 'You’re trying, but I wouldn’t call that crying.'},
+            {percent: 50, max: 74, text: 'If your mother only gave 50% of her effort while giving birth to you, you probably wouldn’t be here right now. This is your chance to not be a disappointment; just think of the tears she shed for you.'},
+            {percent: 75, max: 99, text: 'That’s more like it. Is that Blue by Joni Mitchell I hear? That’s the kind of commitment we need if we’re going to change the world, together.'},
+            {percent: 100, max: 10000, text: 'More and more the hardest part of crying is when I can’t stop.'}
         ]
     })
 
@@ -35,12 +35,12 @@ if (Goals.find().count() === 0) {
         rollOver: 'This is how much a small percentage of adult men indicated they cry on their worst month.',
         minutes: 20,
         messages: [
-            {percent: 0, text: 'Bitch please.'},
-            {percent: 1, text: 'Feminist: 1 percent'},
-            {percent: 25, text: 'Feminist: 25 percent'},
-            {percent: 50, text: 'Feminist: 50 percent'},
-            {percent: 75, text: 'Feminist: 75 percent'},
-            {percent: 100, text: 'Feminist: 100 percent'}
+            {percent: 0, max: 0.99, text: 'Do I have to beat the tears out of you?'},
+            {percent: 1, max: 24, text: 'Are those crocodile tears? Your cold blooded indifference to equality is both frightening and pathetic.'},
+            {percent: 25, max: 49, text: 'You’re trying, but I wouldn’t call that crying.'},
+            {percent: 50, max: 74, text: 'If your mother only gave 50% of her effort while giving birth to you, you probably wouldn’t be here right now. This is your chance to not be a disappointment; just think of the tears she shed for you.'},
+            {percent: 75, max: 99, text: 'That’s more like it. Is that Blue by Joni Mitchell I hear? That’s the kind of commitment we need if we’re going to change the world, together.'},
+            {percent: 100, max: 10000, text: 'More and more the hardest part of crying is when I can’t stop.'}
         ]
     })
 }
@@ -86,7 +86,7 @@ if (Content.find().count() === 0) {
         categoryId: categoryMilitary,
         level: 'power',
         type: 'video',
-        videoId: 'r2OekoR5SHc',
+        videoId: 'MsEZBSTc3a0',
         length: '2m45s'
     })
     Content.insert({
