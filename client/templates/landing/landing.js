@@ -13,6 +13,7 @@ Template.landing.events({
             }); 
         } else {
             Template._loginButtons.toggleDropdown();
+            throwError('Please create an account.');
         }
     }
 });
